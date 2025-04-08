@@ -444,4 +444,27 @@ nav .fas
     border-radius: 15px;
     transition: backgrond 0.5s, transform 0.5s 
 }
+@media (max-width: 600px) {
+    .game-card {
+      width: 90%;
+      margin: 1rem auto;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  
+    .play-now {
+      position: static; /* Prevent overflow */
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+      color: lime; /* or your chosen color */
+      font-weight: bold;
+    }
+  
+    iframe {
+      width: 100%;
+      height: auto;
+    }
+}
+
 
