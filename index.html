@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio </title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/3d4386e737.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <video autoplay loop muted playsinline id="background-video">
+        <source src="Images/background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p2>Unreal Game Developer</p2><br>
+          <br><h1>Hi, I'm <span>SaiRam</span> </h1>  
+        </div>
+    </div>
+</div>
+<!--------------about------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                    <img src="Images/coverMobile.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1><br>
+                <ol class="dotted-list">
+                <p><li>Passionate Unreal Engine developer with experience in Blueprints and C++.</li>
+                   <li> Looking for an internship to build engaging gameplay experiences and deepen my expertise in game development.</li>
+                   <li> Strong foundation in game programming, prototyping, AI behavior, and Unreal Engine workflows.</li>
+                   <li>Actively working on multiplayer mechanics and advanced Unreal Engine features.</li>
+                </p></ol>
+               
+               <style>
+                    .dotted-list {
+                      list-style-type: disc; /* Use bullet points instead of numbers */
+                    }
+                  </style>
+                   
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links experience" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certifications')">certifications</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Unreal Engine 5</span><br> Blueprints, C++</li>
+
+                            <li><span>Gameplay Programming</span><br> (Player movement, AI behavior, obstacle interactions,Health and damage systems)</li>
+
+                            <li>Game Optimization & Debugging</li>
+
+                            <li><span>Version Control</span><br>Git, GitHub</li>
+
+                           
+                           
+                        </ul>
+                    </div>
+                   
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Drone Rampage (Blueprints) - Unreal Engine 5</span><br> Designed and developed a drone-based action game using Unreal Engine Blueprints.
+                            <br>Implemented player movement, shooting mechanics, and enemy interactions.
+                            <br>Created interactive UI elements and game logic.</li>
+
+                            <li><span>Escape Island (C++) - Unreal Engine 5</span><br> Developed a C++-based obstacle course game where players navigate moving obstacles.
+                                <br>Implemented custom player movement and obstacle behavior using C++.
+                                <br>Designed multiple levels with increasing difficulty.</li>
+                           
+                        </ul>
+                    </div>
+                   
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Bachelors of technology</span><br> CSE (AI&ML)   -2025</li>
+                            
+                           
+                        </ul>
+                    </div>
+                  
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>Git & Version Control </span><br> <a href="#"></a></li>
+                            
+                           
+                        </ul>
+                    </div>
+
+                    
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------------my games-------------->
+<div id="games">
+<div class="games">
+    <div class="container">
+        <h1 class = "subtitle">My Games</h1>
+        <div class="GamesList">
+
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Drone Rampage</h2>
+                <p>An action-packed drone shooting game built with Unreal Engine Blueprints.</p>
+                <a href="https://sairamyedida.itch.io/drone-rampage" target="_blank" class="play-now">Play Now</a>
+                <p></p>
+                <iframe width="650" height="315" 
+                            src="https://www.youtube.com/embed/saw9HczIb18?si=d0B_xGQ0WNayQDGK" 
+                            title="Drone Rampage Gameplay"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                <a href=""></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-puzzle-piece"></i>
+                    <h2>Escape Island</h2>
+                    <p>A fun packed 3d platformer with zombie attacs and dangerous obstacles made with combination of c++ and Blueprints</p>
+                    <a href="https://sairamyedida.itch.io/escape-island" target="_blank" class="play-now2">Play Now</a>
+                    <iframe width="650" height="315" src="https://www.youtube.com/embed/2moyD3tCQqE?si=m0XRGMw2MYCGMYyM" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+                </div>
+                
+        </div>
+
+    </div>
+</div>
+</div>
+
+<!------------------------------------------------------portfolio-------------------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class =subtitle>Demo</h1>
+        <div class="GamesList">
+            <div class="Games">
+                <h2>Drone Rampage</h2>
+                <img src="Images/0.png" alt=""></b>
+                <img src="Images/1.png" alt="">
+                <img src="Images/2.png" alt="">
+                <img src="Images/3.png" alt="">
+                <img src="Images/4.png" alt="">
+            </div>
+           
+            <div class="Games">
+                <h2>Escape Island</h2>
+                <img src="Images/22.png  " alt="">
+                <img src="Images/11.png  " alt="">
+                <img src="Images/33.png  " alt="">
+                <img src="Images/44.png  " alt="">
+                <img src="Images/e.png" alt="">
+                
+            </div>
+
+
+        </div>
+        <a href="https://sairamyedida.itch.io/" class="btn">See More</a>
+    </div>
+</div>
+<!-----------------------------------------------------contact---------------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Info</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sairamyedidaoffl@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>6309641235</p>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/sairam-yedida-9b367a253/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sairam1606"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/sairam_yedida?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw=="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Images/Yedida Sai Ram.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-Right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="YOUR NAME" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <input type="name" name="number" placeholder="your number" >
+                        <textarea name="message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+          </div>
+          
+    </div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+        tablink.classList.remove("active-link")
+        }
+    for(tabcontent of tabcontents)
+        {
+        tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+    var sidemen = document.getElementById("sidemenu");
+
+function openmenu() {
+    sidemen.style.right = "0"; // Bring the menu fully into view
+}
+
+function closemenu() {
+    sidemen.style.right = "-300px"; // Move the menu off-screen
+}
+</script>
+<form name="submit-to-google-sheet">
+    
+    
+  </form>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxCeU8ty_97mx8PrbZflJPeFp3PP4IwGglrmqD-2EuIsvVsvP2Hx999ooHl4yRF3wW0/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()  
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
